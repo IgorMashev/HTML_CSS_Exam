@@ -1,0 +1,174 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: Sans;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container {
+    width: 980px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.container > div {
+    height: 100px;
+    margin: auto 0;
+}
+
+header {
+    display: flex;
+    flex: 0 0 auto;
+    height: 160px;
+    color: #ffffff;
+    background: #dcdcdc;
+}
+.wrapper-logo {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    float: left;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.more {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+    letter-spacing: -2px;;
+}
+
+.company {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.menu {
+    flex: 0 0 auto;
+    background: #767676;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.wrapper-menu {
+    text-align: center;
+}
+
+.menu ul li {
+    border-right: solid 2px #ffffff;
+    display: inline-block;
+    padding: 0 12px 0 0;
+}
+
+.menu ul li:last-child {
+    border-right: unset;
+}
+
+.menu ul li:hover {
+    text-decoration: underline;
+}
+
+.slider-wrapper {
+    position: relative;
+    height: 450px;
+}
+
+article {
+    flex: 1 0 auto;
+    margin: 0 auto 195px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    width: 960px;
+}
+
+.left {
+    position:relative;
+    width: 350px;
+    background: #777777;
+    padding: 20px 50px 100px 35px;
+    box-sizing: border-box;
+}
+
+.left-bottom {
+    margin-top: 20px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.center {
+    color: #767676;
+    width: 570px;
+}
+
+
+
+footer {
+    flex: 0 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    background: #777777;
+}
+
+footer > div {
+    width: 33%;
+}
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
