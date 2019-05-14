@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container">
+        <div class="head-container">
           <div class="wrapper-logo">
             <div class="logo">
               <img src="logo.png" alt="logo" title="logo" width="100%" height="100%">
@@ -42,12 +42,56 @@
         </div>
       </div>
       <div class="slider-wrapper">
-        <ul id="slides">
-          <img src="download.png" class="slide showing" width="900px">
-          <img src="logo.png" class="slide">
-          <img src="download.png" class="slide showing">
-          <img src="logo.png" class="slide">
-        </ul>
+        <div class="container">
+
+
+          <input type="radio" id="i1" name="images" checked/>
+          <input type="radio" id="i2" name="images" />
+          <input type="radio" id="i3" name="images" />
+          <input type="radio" id="i4" name="images"  />
+
+          <div class="slide_img" id="one">
+
+            <img src="1.jpg">
+
+            <label class="prev" for="i4"><span></span></label>
+            <label class="next" for="i2"><span></span></label>
+
+          </div>
+
+          <div class="slide_img" id="two">
+
+            <img src="2.jpg " >
+
+            <label class="prev" for="i1"><span></span></label>
+            <label class="next" for="i3"><span></span></label>
+
+          </div>
+
+          <div class="slide_img" id="three">
+            <img src="3.jpg">
+
+            <label class="prev" for="i2"><span></span></label>
+            <label class="next" for="i4"><span></span></label>
+          </div>
+
+
+          <div class="slide_img" id="four">
+            <img src="4.jpg">
+
+            <label class="prev" for="i3"><span></span></label>
+            <label class="next" for="i1"><span></span></label>
+
+          </div>
+
+          <div id="nav_slide">
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+            <label for="i3" class="dots" id="dot3"></label>
+            <label for="i4" class="dots" id="dot4"></label>
+          </div>
+
+        </div>
       </div>
       <article>
         <section class="left">
